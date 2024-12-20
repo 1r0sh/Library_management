@@ -1,21 +1,29 @@
-package com.example.a5012_library_management_system;
+package com.example.library_management;
 
-public class Publisher {
+public class Branch {
+    private String id;
     private String name;
     private String address;
-    private String phone;
 
-    public Publisher() {
+    public Branch() {
         // Default constructor
     }
 
-    public Publisher(String name, String address, String phone) {
+    public Branch(String name, String address) {
+        this.id = null;
         this.name = name;
         this.address = address;
-        this.phone = phone;
     }
 
-    // Getters and setters
+    // Getters and setters for branch ID, name, and address
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -30,13 +38,5 @@ public class Publisher {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 }

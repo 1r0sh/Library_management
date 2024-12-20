@@ -1,4 +1,4 @@
-package com.example.a5012_library_management_system;
+package com.example.library_management;
 
 import android.content.Context;
 

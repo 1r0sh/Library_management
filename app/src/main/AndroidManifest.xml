@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a5012_library_management_system">
+    package="com.example.library_management">
     
     <application
         android:icon="@mipmap/ic_launcher"
@@ -8,18 +8,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibraryManagement">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.library_management.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="BookAddActivity" />
-        <activity android:name="BookViewActivity" />
-        <activity android:name="MemberAddActivity" />
-        <activity android:name="PublisherActivity" />
+        <activity android:name="com.example.library_management.BookAddActivity" />
+        <activity android:name="com.example.library_management.BookViewActivity" />
+        <activity android:name="com.example.library_management.MemberAddActivity" />
+        <activity android:name="com.example.library_management.PublisherActivity" />
         <activity android:name="AuthorAddActivity" />
-        <activity android:name="BranchAddActivity" />
+        <activity android:name="com.example.library_management.BranchAddActivity" />
     </application>
 </manifest>
